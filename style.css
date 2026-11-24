@@ -1,0 +1,27 @@
+/* Shotbox site: mirrors the app (indigo accent, grouped-list background, rounded white cards). */
+:root{--accent:#6155f5;--accent2:#8a80ff;--text:#1c1c1e;--muted:#6e6e73;--bg:#f2f2f7;--card:#fff;--line:#e5e5ea;
+  --hero1:#9d94ff;--hero2:#5b4be0;--hero3:#2a1f86}
+@media (prefers-color-scheme:dark){:root{--accent:#8a80ff;--accent2:#6155f5;--text:#f5f5f7;--muted:#a1a1a6;--bg:#000;--card:#1c1c1e;--line:#2c2c2e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.hero{background:radial-gradient(120% 140% at 50% 0%,var(--hero1) 0%,var(--hero2) 48%,var(--hero3) 100%);color:#fff;text-align:center;padding:48px 20px 56px}
+.hero img{width:96px;height:96px;border-radius:22px;box-shadow:0 10px 30px rgba(15,8,70,.45)}
+.hero h1{font-size:38px;margin:16px 0 4px;letter-spacing:-.02em}
+.hero p{margin:0 auto;max-width:520px;opacity:.93;font-size:19px}
+.hero nav{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hero nav a{color:#fff;background:rgba(255,255,255,.18);padding:8px 16px;border-radius:999px;font-size:15px;font-weight:600}
+.hero nav a.on{background:#fff;color:#4a3dd1}
+main{max-width:720px;margin:-24px auto 0;padding:0 16px 72px}
+.panel{background:var(--card);border-radius:18px;padding:20px 22px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:30px 8px 8px;font-weight:600}
+.panel h3{margin:0 0 4px;font-size:17px} .panel p{margin:0;color:var(--muted)}
+.panel h3+p{margin-top:2px}
+.panel+.panel{margin-top:10px}
+.sec h3{color:var(--accent)}
+.folders{display:flex;flex-wrap:wrap;gap:8px}
+.folders span{display:inline-flex;align-items:center;gap:8px;background:var(--bg);border-radius:999px;padding:6px 14px 6px 8px;font-size:15px;font-weight:600}
+.folders i{width:22px;height:22px;border-radius:7px;display:inline-block}
+.meta{color:var(--muted);font-size:14px;margin:0;padding:40px 8px 0;position:relative}
+.meta+.panel{margin-top:10px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:0 16px 40px}

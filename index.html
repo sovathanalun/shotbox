@@ -3,32 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b4be0">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
 <title>Shotbox – Support</title>
-<style>
-  :root { --text:#1d1d1f; --muted:#6e6e73; --bg:#fff; --accent:#6155f5; --card:#f5f5f7; }
-  @media (prefers-color-scheme: dark) { :root { --text:#f5f5f7; --muted:#a1a1a6; --bg:#000; --accent:#8a80ff; --card:#1c1c1e; } }
-  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
-  h1 { font-size:34px; margin:0 0 4px; } h2 { font-size:21px; margin:32px 0 8px; }
-  .muted { color:var(--muted); } a { color:var(--accent); }
-  .card { background:var(--card); border-radius:14px; padding:16px 18px; margin:12px 0; }
-  .card h3 { margin:0 0 4px; font-size:17px; } .card p { margin:0; color:var(--muted); }
-</style>
 </head>
 <body>
-<main>
+<header class="hero">
+<img src="icon.png" alt="Shotbox app icon">
 <h1>Shotbox</h1>
-<p class="muted">Find any text in your screenshots, sorted into smart folders.</p>
+<p>Find any text in your screenshots, sorted into smart folders.</p>
+<nav><a class="on" href="./">Support</a><a href="privacy-policy.html">Privacy Policy</a></nav>
+</header>
+<main>
+<h2>Smart folders</h2>
+<div class="panel"><div class="folders">
+<span><i style="background:#34c759"></i>Receipts</span><span><i style="background:#0a84ff"></i>Travel Passes</span><span><i style="background:#a2845e"></i>IDs &amp; Documents</span><span><i style="background:#ff9500"></i>Codes &amp; Passwords</span><span><i style="background:#8e8e93"></i>Products &amp; Specs</span><span><i style="background:#30b0c7"></i>Chats</span><span><i style="background:#32ade6"></i>Social Posts</span><span><i style="background:#6155f5"></i>Text Notes</span><span><i style="background:#ff2d55"></i>Design Inspo</span>
+</div></div>
 
 <h2>Contact support</h2>
-<p>Email <a href="mailto:lunsovathana@gmail.com?subject=Shotbox%20Support">lunsovathana@gmail.com</a>. Include your device model and iOS version, and we'll reply within two business days.</p>
+<div class="panel"><p>Email <a href="mailto:lunsovathana@gmail.com?subject=Shotbox%20Support">lunsovathana@gmail.com</a>. Include your device model and iOS version, and we'll reply within two business days.</p></div>
 
 <h2>Frequently asked questions</h2>
-<div class="card"><h3>Why does Shotbox need access to my photos?</h3><p>To find your screenshots and read the text in them. It only scans images marked as screenshots, plus photos you import yourself. Everything is recognized on your device.</p></div>
-<div class="card"><h3>What happens when I delete a screenshot in Shotbox?</h3><p>iOS asks you to confirm, and the image goes to Recently Deleted in Photos. Shotbox keeps the text and a small preview under Saved Text.</p></div>
-<div class="card"><h3>A screenshot is in the wrong folder.</h3><p>Open it, choose the folder menu and move it. Your choice is kept when Shotbox re-scans.</p></div>
-<div class="card"><h3>Search finds nothing.</h3><p>Indexing reads the newest screenshots first and shows progress at the top of the Library. Allow full photo access in iOS Settings, then reopen the app.</p></div>
-<div class="card"><h3>Where is my data stored?</h3><p>On your device only. See the <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
+<div class="panel"><h3>Why does Shotbox need access to my photos?</h3><p>To find your screenshots and read the text in them. It only scans images marked as screenshots, plus photos you import yourself. Everything is recognized on your device.</p></div>
+<div class="panel"><h3>What happens when I delete a screenshot in Shotbox?</h3><p>iOS asks you to confirm, and the image goes to Recently Deleted in Photos. Shotbox keeps the text and a small preview under Saved Text.</p></div>
+<div class="panel"><h3>A screenshot is in the wrong folder.</h3><p>Open it, choose the folder menu and move it. Your choice is kept when Shotbox re-scans.</p></div>
+<div class="panel"><h3>Search finds nothing.</h3><p>Indexing reads the newest screenshots first and shows progress at the top of the Library. Allow full photo access in iOS Settings, then reopen the app.</p></div>
+<div class="panel"><h3>Where is my data stored?</h3><p>On your device only. See the <a href="privacy-policy.html">Privacy Policy</a>.</p></div>
 </main>
+<footer>© 2026 Lun Sovathana</footer>
 </body>
 </html>
